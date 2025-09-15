@@ -33,6 +33,5 @@ jobs:
           server: ${{ secrets.FTP_SERVER }} # ex: dealink.com ou l'IP du serveur
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./dist/ # Le dossier build de Vite
-          # remote-dir: /public_html/ # Optionnel: changez si votre dossier racine est différent
-          # port: 21 # Optionnel: changez si vous utilisez un port non standard
+          local-dir: ./dist/
+          remote-dir: /sites/dealink.online/
