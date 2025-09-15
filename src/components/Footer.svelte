@@ -4,7 +4,6 @@
 
 <footer class="bg-gray-900 text-white py-12 px-4">
       <div class="max-w-6xl mx-auto">
-        
         <div class="text-center mb-8">
           <div class="flex items-center justify-center space-x-2 mb-4">
             <svg
