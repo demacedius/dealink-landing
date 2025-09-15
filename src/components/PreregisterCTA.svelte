@@ -62,7 +62,6 @@
         {#if status !== "success"}
             <div class="bg-gray-50 rounded-2xl p-8 max-w-md mx-auto">
                 <form on:submit|preventDefault={handleSubmit} class="space-y-4">
-                    
                     <div class="grid grid-cols-2 gap-2 mb-4">
                         <button type="button" on:click={() => userType = 'freelancer'} class="user-type-btn w-full py-2 px-4 rounded-lg font-semibold border border-gray-200 bg-white" class:active={userType === 'freelancer'}>
                             Freelance
