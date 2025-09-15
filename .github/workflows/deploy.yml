@@ -1,0 +1,38 @@
+name: Build and Deploy to Infomaniak
+
+on:
+  push:
+    branches:
+      - main  # ou master selon votre branche par défaut
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18' # Utilise une version stable de Node.js
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build project
+        run: npm run build
+        env:
+          VITE_SUPABASE_URL: ${{ secrets.VITE_SUPABASE_URL }}
+          VITE_SUPABASE_ANON_KEY: ${{ secrets.VITE_SUPABASE_ANON_KEY }}
+
+      - name: Deploy to FTP
+        uses: SamKirkland/FTP-Deploy-Action@4.3.3
+        with:
+          server: ${{ secrets.FTP_SERVER }} # ex: dealink.com ou l'IP du serveur
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./dist/ # Le dossier build de Vite
+          # remote-dir: /public_html/ # Optionnel: changez si votre dossier racine est différent
+          # port: 21 # Optionnel: changez si vous utilisez un port non standard
