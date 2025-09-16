@@ -87,13 +87,13 @@
 
       
         <div class="flex justify-center space-x-6 mb-8">
-          <a href="#" class="text-gray-400 hover:text-white transition-colors">
+          <a href="mailto:contact@dealink.online" class="text-gray-400 hover:text-white transition-colors">
             <Mail class="w-5 h-5" />
           </a>
-          <a href="#" class="text-gray-400 hover:text-white transition-colors">
+          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors">
             <Twitter class="w-5 h-5" />
           </a>
-          <a href="#" class="text-gray-400 hover:text-white transition-colors">
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition-colors">
             <Linkedin class="w-5 h-5" />
             
           </a>
@@ -101,16 +101,16 @@
 
 
         <div class="flex flex-wrap justify-center space-x-8 mb-8 text-sm">
-          <a href="#" class="text-gray-400 hover:text-white transition-colors">
+          <a href="/about" class="text-gray-400 hover:text-white transition-colors">
             À propos
           </a>
-          <a href="#" class="text-gray-400 hover:text-white transition-colors">
+          <a href="/contact" class="text-gray-400 hover:text-white transition-colors">
             Contact
           </a>
-          <a href="#" class="text-gray-400 hover:text-white transition-colors">
+          <a href="/terms" class="text-gray-400 hover:text-white transition-colors">
             Conditions d'utilisation
           </a>
-          <a href="#" class="text-gray-400 hover:text-white transition-colors">
+          <a href="/privacy" class="text-gray-400 hover:text-white transition-colors">
             Confidentialité
           </a>
         </div>
